@@ -97,8 +97,11 @@ This file defines the LDAP connection settings and specifies the account used fo
 | host\_url | LDAP server URL | ldap://localhost:389 |
 | auth\_type | LDAP authentication type (supported values: none, simple or strong) | simple |
 | principal\_dn | distinguished name (DN) of the user account used for browsing through the LDAP users | cn=Directory Manager |
-| principal\_password | password of the LDAP ?browser account | root |
+| principal\_passwordn  | password of the LDAP ?browser account | root |
 | directory\_user\_type | type of the user object ("user" for an Active Directory, "person" for an LDAP) | person |
+| enforce\_ssl | force the connection between ldap client and server to use ssl | false |
+| truststore\_path | allow to configure the java truststore path,  in case of you want to use different keystore than the default  |  |
+| truststore\_password | allow to configure the java truststore password, in case of you want to use a different keystore password than the default  | |
 
 ### logger.properties
 
